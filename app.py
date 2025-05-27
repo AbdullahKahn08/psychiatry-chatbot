@@ -17,7 +17,7 @@ def stream_answer(response):
 
 chat_history = [SystemMessage(content='You are a helpful psychiatry consultant. Users will query you about their different problems and you have to proceed accordingly. Keep note of the fact that your answers should be well rounded and short and long whenever needed. Also as you are a consultant your job is to come up with solution to the users problem.')]
 
-model = ChatGoogleGenerativeAI(model='gemini-2.0-flash',temperature=0.1)
+model = ChatGoogleGenerativeAI(api_key='AIzaSyAD_5B9jJvIrEareYhHLMTsP-SrPku8Yns',model='gemini-2.0-flash',temperature=0.1)
 
 query = st.chat_input('Ask Away')
 
